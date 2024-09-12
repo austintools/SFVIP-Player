@@ -8,7 +8,7 @@
 
 SFVIP-Player IPTV Player is a powerful media player that allows you to enjoy a wide range of audio and video formats effortlessly. 
 It is designed to provide users with a seamless playback experience, supporting various media file types and offering exceptional performance.
-With SFVIP Player X 64 IPTV Player, you can delve into your favorite movies, TV shows, music, and online content like never before.
+With SFVIP-Player, you can delve into your favorite movies, TV shows, music, and online content like never before.
 
 ## Features
 
