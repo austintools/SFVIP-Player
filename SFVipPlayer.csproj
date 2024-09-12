@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{A821FD9D-0394-49C3-9D33-253A485F38AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SFVipPlayer</RootNamespace>
+    <AssemblyName>SFVipPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>SFVipPlayer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iptv" />
+    <Reference Include="libmpv">
+      <HintPath>..\..\..\Telegram Desktop\SFVipPlayer\libmpv.dll</HintPath>
+    </Reference>
+    <Reference Include="libthemes">
+      <HintPath>..\..\..\Telegram Desktop\SFVipPlayer\libthemes.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="mscorlib" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-{0817497A-\55277722-7CFD-4E2E-A571-21B17BE1EBDA.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="A\a.2.cs" />
+    <Compile Include="A\A.cs" />
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\Constants.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\DoubleToVisibilityConverter.cs" />
+    <Compile Include="Classes\IntegerToBoolConverter.cs" />
+    <Compile Include="Classes\IRelayCommand.2.cs" />
+    <Compile Include="Classes\IRelayCommand.cs" />
+    <Compile Include="Classes\MathConverter.cs" />
+    <Compile Include="Classes\MathOperation.cs" />
+    <Compile Include="Classes\MpvConfigurationFile.cs" />
+    <Compile Include="Classes\PageCustomization.cs" />
+    <Compile Include="Classes\RelayCommand.2.cs" />
+    <Compile Include="Classes\RelayCommand.cs" />
+    <Compile Include="Classes\StringToVisibilityConverter.cs" />
+    <Compile Include="Classes\UpdateApplication.cs" />
+    <Compile Include="Classes\UpdateData.cs" />
+    <Compile Include="Config\ConfigItem.cs" />
+    <Compile Include="Config\SettingsItem.cs" />
+    <Compile Include="Config\SettingsMng.cs" />
+    <Compile Include="Controls\Clock\DigitalClock.xaml.cs">
+      <DependentUpon>DigitalClock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Epg\GuideChannelView.xaml.cs">
+      <DependentUpon>GuideChannelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Epg\GuideView.xaml.cs">
+      <DependentUpon>GuideView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Epg\TimeTableView.xaml.cs">
+      <DependentUpon>TimeTableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageBox\MessageBox.xaml.cs">
+      <DependentUpon>MessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageBox\MsgBoxButtons.cs" />
+    <Compile Include="Controls\MessageBox\MsgBoxEventArgs.cs" />
+    <Compile Include="Controls\MessageBox\MsgBoxEventHandler.cs" />
+    <Compile Include="Controls\MessageBox\MsgBoxResult.cs" />
+    <Compile Include="Controls\Notification\KeyboardControl.xaml.cs">
+      <DependentUpon>KeyboardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Notification\PlayerNotifications.xaml.cs">
+      <DependentUpon>PlayerNotifications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OpenDialog\AddAccountDialog.xaml.cs">
+      <DependentUpon>AddAccountDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OpenDialog\Addm3UAccountDialog.xaml.cs">
+      <DependentUpon>Addm3UAccountDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OpenDialog\AddPlaylistAccountDialog.xaml.cs">
+      <DependentUpon>AddPlaylistAccountDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OpenDialog\PinDialog.xaml.cs">
+      <DependentUpon>PinDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ParentalControls\ParentalControl.xaml.cs">
+      <DependentUpon>ParentalControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Schedule\RecordingSchedule.xaml.cs">
+      <DependentUpon>RecordingSchedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Subtitles\DownloadedSubEventArgs.cs" />
+    <Compile Include="Controls\Subtitles\DownloadedSubEventHandler.cs" />
+    <Compile Include="Controls\Subtitles\SubtitleEntry.cs" />
+    <Compile Include="Controls\Subtitles\SubtitlesDownloader.xaml.cs">
+      <DependentUpon>SubtitlesDownloader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Events\AccountEventArgs.cs" />
+    <Compile Include="Events\AccountEventHandler.cs" />
+    <Compile Include="Events\EpgDataTableEventArgs.cs" />
+    <Compile Include="Events\EpgDataTableEventHandler.cs" />
+    <Compile Include="Extensions\BitmapExtensions.cs" />
+    <Compile Include="Extensions\FilePathExtensions.cs" />
+    <Compile Include="Extensions\ImageEx.cs" />
+    <Compile Include="Extensions\RegistryExtensions.cs" />
+    <Compile Include="Extensions\StreamEx.cs" />
+    <Compile Include="Helpers\DispatcherHelper.cs" />
+    <Compile Include="Language\DefaultLanguage.cs" />
+    <Compile Include="Language\LanguageManager.cs" />
+    <Compile Include="Logging\LogWriter.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Notify\NotifyPropertyBase.cs" />
+    <Compile Include="OptionsCommandLine.cs" />
+    <Compile Include="Pages\Library\AccountInLibrary.xaml.cs">
+      <DependentUpon>AccountInLibrary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Library\AccountInLibraryList.xaml.cs">
+      <DependentUpon>AccountInLibraryList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Library\Library.xaml.cs">
+      <DependentUpon>Library.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Library\LibraryButtons.xaml.cs">
+      <DependentUpon>LibraryButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\PleaseWait.xaml.cs">
+      <DependentUpon>PleaseWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\ProgressBarPage.xaml.cs">
+      <DependentUpon>ProgressBarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VideoPlayer\LocalPlayer.xaml.cs">
+      <DependentUpon>LocalPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Scheduling\ScheduledAction.cs" />
+    <Compile Include="Scheduling\ScheduleEntry.cs" />
+    <Compile Include="Scheduling\SchedulerService.cs" />
+    <Compile Include="ScreenState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\Clock\DigitalClock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Epg\GuideChannelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Epg\GuideView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Epg\TimeTableView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MessageBox\MessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Notification\KeyboardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Notification\PlayerNotifications.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OpenDialog\AddAccountDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OpenDialog\Addm3UAccountDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OpenDialog\AddPlaylistAccountDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OpenDialog\PinDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ParentalControls\ParentalControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Schedule\RecordingSchedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Subtitles\SubtitlesDownloader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Language\english.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Library\AccountInLibrary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Library\AccountInLibraryList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Library\Library.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Library\LibraryButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Other\AboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Other\PleaseWait.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Other\ProgressBarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Other\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VideoPlayer\LocalPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fonts\dseg7classicmini-bold.ttf" />
+    <Resource Include="icons\filefolder.png" />
+    <Resource Include="icons\metrologo.png" />
+    <Resource Include="icons\notavailable.png" />
+    <Resource Include="sfvipicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,24 @@
+<Application
+	x:Class="SFVipPlayer.App"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:SFVipPlayer"
+	xmlns:themes="http://metro.apps.com/xaml/themes"
+	xmlns:controls="http://metro.apps.com/xaml/controls">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="pack://application:,,,/libthemes;component/Themes/Blue.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/libthemes;component/Themes/Controls.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/libthemes;component/Themes/Animations.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/libthemes;component/Themes/Icons.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/Language/English.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>
